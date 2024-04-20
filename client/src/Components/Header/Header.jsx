@@ -1,23 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import "./Header.css";
+import { useNavigate } from "react-router-dom";
+import React from "react";
 
-function Header() {
+const Header = ({ connectedAddress }) => {
+  const navigate = useNavigate();
+
+  const handleHome = () => {
+    navigate("/home");
+  };
+
+  const handleCreate = () => {
+    navigate("/create");
+  };
+
+  const handleContact = () => {
+    navigate("/contact");
+  };
+
   return (
-    <header>
-      <nav>
-        <div className="logo">
-          <Link to="/">Globiix</Link>
-        </div>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/features">Features</Link></li>
-          <li><Link to="/parallax">Parallax</Link></li>
-        </ul>
-      </nav>
+    <header className="header">
+      <div className="header-container">
+        <nav>
+          <ul>
+            <li onClick={handleHome}>Home</li>
+            <li onClick={handleCreate}>Create</li>
+            <li>List</li>
+            <li onClick={handleContact}>Contact</li>
+            {connectedAddress && (
+              <li className="connected-wallet">{connectedAddress}</li>
+            )}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
-}
+};
 
 export default Header;
 

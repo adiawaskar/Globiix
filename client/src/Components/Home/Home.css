@@ -1,0 +1,33 @@
+.site-header {
+    background-image: url("../../../public/dubai.jpg");
+    background-position: bottom;
+    background-size: cover;
+    padding: 5rem;
+    min-height: 85vh;
+    position: relative;
+}
+
+.site-header-mask {
+    position: absolute;
+    inset: 0;
+    /* background: rgb(0 0 0 / 0.5); */
+
+    -webkit-mask: url("../../../public/dubai.jpg");
+    -webkit-mask-position: center bottom;
+    -webkit-mask-size: 100%;
+
+    mask: url("../../../public/dubai_cut.png");
+    mask-position: bottom;
+    mask-size: cover;
+}
+
+.site-title {
+    text-align: center;
+    color: aliceblue;
+    font-size: clamp(4rem, 10vw + 0.5rem, 9rem);
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+}

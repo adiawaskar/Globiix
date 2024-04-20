@@ -1,0 +1,47 @@
+/* Header.css */
+
+.header {
+    background-color: rgba(21, 21, 21, 0.5); /* Transparent background */
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%; /* Set width to 70% */
+    border-radius: 999px; /* Rounded edges */
+    z-index: 100;
+    backdrop-filter: blur(5px); /* Apply blur effect */
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  
+  .header nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .header nav ul li:hover,
+  .header nav ul li.clicked {
+    color: palevioletred;
+  }
+  
+  
+  
+  

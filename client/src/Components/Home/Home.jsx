@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './Home.css';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="site-header">
+      <div className="site-header-mask">
+        <h1 className="site-title">Globiix</h1>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
