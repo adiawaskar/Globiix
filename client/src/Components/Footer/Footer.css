@@ -1,0 +1,49 @@
+.footer-container {
+    background-image: url('../../../public/footer3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #020c31;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.column {
+    width: 25%;
+    padding: 0 20px;
+    text-align: left;
+    color: #f9f7f7;
+    margin-bottom: 28%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.column h3 {
+    font-size: 30px;
+    color: #9f6187;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.column p {
+    margin: 5px 0;
+
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 5px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
