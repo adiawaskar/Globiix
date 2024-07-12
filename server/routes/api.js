@@ -6,11 +6,11 @@ const router = express.Router();
 
 // Initialize the ApifyClient with API token
 const client = new ApifyClient({
-    token: 'apify_api_YCXsz4xWLGGTdQjPE5uqzU77cQ4L122fCUVC',
+    token: 'your_apify_token_here',
 });
 
-const APIFY_TASK_ID = 'riti12~tripadvisor-scraper-task';
-const APIFY_API_TOKEN = 'apify_api_YCXsz4xWLGGTdQjPE5uqzU77cQ4L122fCUVC';
+const APIFY_TASK_ID = 'your_task_ID_here';
+const APIFY_API_TOKEN = 'your_apify_token_here';
 
 const updateTaskInput = async (city, maxItemsPerQuery) => {
     try {
