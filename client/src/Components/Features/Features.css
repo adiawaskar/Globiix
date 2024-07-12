@@ -1,0 +1,60 @@
+/* Features.css */
+
+.features-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax2 {
+    /* background-image: url('../../../public/sea.jpg'); */
+    background-color: #020c31;
+    /* background-color: #f4f4f4; */
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0%;
+}
+
+.parallax2 h1 {
+    font-size: 48px;
+    color: #b25e97da;
+    /* Change text color as needed */
+}
+
+.photo-grid {
+    display: flex;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    margin-top: 30px;
+}
+
+.photo {
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.view-more-btn {
+    background-color: #007bff;
+    /* Change button background color as needed */
+    color: #fff;
+    /* Change button text color as needed */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+.view-more-btn:hover {
+    background-color: #0056b3;
+}

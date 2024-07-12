@@ -1,5 +1,5 @@
 .site-header {
-    background-image: url("../../../public/dubai.jpg");
+    background-image: url("../../../public/main.png");
     background-position: bottom;
     background-size: cover;
     padding: 5rem;
@@ -12,11 +12,11 @@
     inset: 0;
     /* background: rgb(0 0 0 / 0.5); */
 
-    -webkit-mask: url("../../../public/dubai.jpg");
+    -webkit-mask: url("../../../public/mountain_subtract.png");
     -webkit-mask-position: center bottom;
     -webkit-mask-size: 100%;
 
-    mask: url("../../../public/dubai_cut.png");
+    mask: url("../../../public/mountain_subtract.png");
     mask-position: bottom;
     mask-size: cover;
 }

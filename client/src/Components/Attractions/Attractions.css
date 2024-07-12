@@ -1,0 +1,14 @@
+/* AttractionList.css */
+
+.attraction-list {
+    margin-top: 20px;
+
+}
+
+.attraction-list h2 {
+    margin-bottom: 10px;
+}
+
+.attraction-list button {
+    margin-left: 10px;
+}
